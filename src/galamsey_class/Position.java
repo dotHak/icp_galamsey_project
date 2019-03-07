@@ -1,30 +1,63 @@
+// Package Name
 package galamsey_class;
 
+/**
+ * Definition of the <strong>Position</strong> class
+ * @author Hubert
+ * @version  1.0.0.
+ */
 public class Position {
+    // Instate variables
     private double longitude;
     private double latitude;
 
+    /**
+     * Overloaded Constructor for the position class
+     * @param longitude the position longitude
+     * @param latitude the position latitude
+     */
     public Position(double longitude, double latitude) {
         this.longitude = longitude;
         this.latitude = latitude;
     }
 
+    /**
+     * Accessor method for the longitude
+     * @return the longitude of the position
+     */
     public double getLongitude() {
         return longitude;
     }
 
+    /**
+     * Mutator method for the longitude
+     * @param longitude the new longitude
+     */
     public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
 
+    /**
+     * Accessor method for the latitude
+     * @return the latitude
+     */
     public double getLatitude() {
         return latitude;
     }
 
+    /**
+     * Mutator method for the latitude
+     * @param latitude the latitude
+     */
     public void setLatitude(double latitude) {
         this.latitude = latitude;
     }
 
+    /**
+     * equals method
+     * @param object the object to compare
+     * @return boolean
+     */
     public boolean equals(Object object) {
         if (this == object) return true;
         if (object == null || getClass() != object.getClass()) return false;
@@ -34,6 +67,10 @@ public class Position {
                 Double.compare(position.latitude, latitude) == 0;
     }
 
+    /**
+     * toString method
+     * @return the position in string format
+     */
     @Override
     public String toString() {
         return "Position {" +
@@ -42,6 +79,10 @@ public class Position {
                 '}';
     }
 
+    /**
+     * Main method to facilitate the code running
+     * @param args
+     */
     public static void main(String[] args){
         Position pos = new Position(20, 60);
         System.out.println(pos.toString());
