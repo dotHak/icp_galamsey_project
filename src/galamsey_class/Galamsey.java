@@ -3,13 +3,15 @@ package galamsey_class;
 
 /**
  * Definition of the <strong>Galamasey</strong> class
+ * @author Hubert Apana
+ * @version 1.0.0
  */
 public class Galamsey {
-    // Instate variables
-    private Position position;
-    private int galamseyYear;
-    private int colourValue;
-    private vegColour vegetationColour;
+    // Instant  variables
+    private Position position; // The position of the galamsey
+    private int galamseyYear; // The year the galamsey happened
+    private int colourValue; // The colour value of the vegetation
+    private vegColour vegetationColour; // The colour of the vegetation
 
     /**
      * enum object for the vegetation colour

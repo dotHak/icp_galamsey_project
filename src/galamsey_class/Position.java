@@ -3,13 +3,13 @@ package galamsey_class;
 
 /**
  * Definition of the <strong>Position</strong> class
- * @author Hubert
- * @version  1.0.0.
+ * @author Hubert Apana
+ * @version  1.0.0
  */
 public class Position {
-    // Instate variables
-    private double longitude;
-    private double latitude;
+    // Instant variables
+    private double longitude; //The longitude of the position
+    private double latitude;  // The latitude of the position
 
     /**
      * Overloaded Constructor for the position class
@@ -80,7 +80,7 @@ public class Position {
     }
 
     /**
-     * Main method to facilitate the code running
+     * Main method to facilitate the code execution
      * @param args
      */
     public static void main(String[] args){

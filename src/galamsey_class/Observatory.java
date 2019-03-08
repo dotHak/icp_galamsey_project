@@ -11,16 +11,17 @@ import java.util.Objects;
  * @version 1.0.0
  */
 public class Observatory {
-    private String observatoryName;
-    private String countryName;
-    private int yearStarted;
-    private double areaCovered;
-    private ArrayList<Galamsey> galamseyList;
+    // Instant variables
+    private String observatoryName; // The name of the observatory
+    private String countryName; // The country the observatory is located
+    private int yearStarted; // The year the observatory was started
+    private double areaCovered; // The area covered in kilometers square by the observatory
+    private ArrayList<Galamsey> galamseyList; // The list of galamseys in the observatory
 
     /**
      * Overloaded Constructor for the observatory
      * @param observatoryName the name of the observatory
-     * @param countryName the country the observatory occured
+     * @param countryName the name of country the observatory occurred
      * @param yearStarted the year the galamsey started
      * @param areaCovered the area covered in kilometers square
      */
